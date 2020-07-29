@@ -1,6 +1,6 @@
 # SpringBootDemo
 * MySql部署  
-1、阿里云镜像地址 http://mirrors.aliyun.com/centos/7/isos/x86_64/  
+1、CentOs镜像地址 http://mirrors.aliyun.com/centos/7/isos/x86_64/  
 2、DockerHub相关命令 https://hub.docker.com/search?q=mysql&type=image  
 * Docker安装  
 uname -r  
