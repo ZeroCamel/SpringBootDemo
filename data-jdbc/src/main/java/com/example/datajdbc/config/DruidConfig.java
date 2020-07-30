@@ -33,7 +33,7 @@ public class DruidConfig {
         iniParams.put("loginUsername","admin");
         iniParams.put("loginPassword","123456");
         iniParams.put("allow","");
-//      iniParams.put("deny","192.268.2.622");
+        //iniParams.put("deny","192.268.2.622");
         registrationBean.setInitParameters(iniParams);
         return registrationBean;
     }

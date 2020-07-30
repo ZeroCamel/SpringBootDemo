@@ -19,7 +19,7 @@ public class HelloController {
     @GetMapping("/query")
     public Map<String,Object> hello()
     {
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from user;");
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from department;");
         return maps.get(0);
     }
 }
