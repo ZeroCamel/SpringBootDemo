@@ -10,6 +10,5 @@ public class HelloCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("CommandLineRunner..."+ Arrays.asList(args));
-        throw new Exception();
     }
 }

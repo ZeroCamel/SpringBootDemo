@@ -10,6 +10,5 @@ public class HelloApplicationRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("ApplicationRunner...run...");
 
-        throw new Exception();
     }
 }
