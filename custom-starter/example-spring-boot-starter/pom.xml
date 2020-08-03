@@ -10,6 +10,7 @@
 
     <!--启动器-->
     <dependencies>
+        <!--引入自动配置模块-->
         <dependency>
             <groupId>com.example.starter</groupId>
             <artifactId>example-spring-boot-starter-autoconfigure</artifactId>
