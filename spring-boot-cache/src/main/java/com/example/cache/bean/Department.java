@@ -1,5 +1,8 @@
 package com.example.cache.bean;
 
+/**
+ * @Author zeroCamel
+ */
 public class Department {
 
     private Integer id;

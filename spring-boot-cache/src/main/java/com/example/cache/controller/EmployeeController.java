@@ -20,7 +20,7 @@ public class EmployeeController {
     EmployeeService employeeService;
 
     @GetMapping("/emp/{id}")
-    public Employee getEmployee(@PathVariable Integer id)
+    public Employee getEmployee(@PathVariable("id") Integer id)
     {
         Employee employee = employeeService.getEmployee(id);
         return employee;

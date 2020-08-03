@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * @program: spring-boot-cache
- * @description: ${@CacheConfig 抽取缓存公共配置}
+ * @description: ${@CacheConfig 抽取缓存公共配置
+ *                  @CacheConfig(cacheNames = "emp")
+ * }
  * @author: Mr.ZeroCamel
  * @create: 2020-08-01 16:37
  **/
-//@CacheConfig(cacheNames = "emp")
+@CacheConfig(cacheManager = "employeeCacheManager")
 @Service
 public class EmployeeService {
 
@@ -27,14 +29,17 @@ public class EmployeeService {
      * value/cachenames 缓存值
      * unless 条件满足不缓存
      * sync 使用异步模式 默认同步 方法执行之后缓存 但是不支持Unlesss
+     *
+     * 示例：
+     * @Cacheable(cacheNames = {"emp"},key = "#root.methodName+'['+#id+']'")
+     * @Cacheable(cacheNames = {"emp"},keyGenerator = "myKeyGenerator",condition = "#p0>1 and #root.methodName eq 'aaa'",unless = "#a0=2")
+     *
      * }$
     * @Param: [id]
     * @return: com.example.cache.bean.Employee
     * @Author: Mr.ZeroCamel
     * @Date: 2020/8/1
     */
-    //@Cacheable(cacheNames = {"emp"},key = "#root.methodName+'['+#id+']'")
-    //@Cacheable(cacheNames = {"emp"},keyGenerator = "myKeyGenerator",condition = "#p0>1 and #root.methodName eq 'aaa'",unless = "#a0=2")
     @Cacheable(cacheNames = {"emp"})
     public Employee getEmployee(@PathVariable Integer id)
     {

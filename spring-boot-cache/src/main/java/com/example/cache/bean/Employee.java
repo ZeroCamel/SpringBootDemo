@@ -1,6 +1,11 @@
 package com.example.cache.bean;
 
-public class Employee {
+import java.io.Serializable;
+
+/**
+ * @Author zeroCamel
+ */
+public class Employee implements Serializable {
     private Integer id;
     private String lastName;
     private Integer gender;

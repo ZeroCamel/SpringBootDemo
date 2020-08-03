@@ -45,6 +45,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--引入data-redis缓存场景-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
