@@ -1,8 +1,10 @@
 package com.zerocamel.elastic.bean;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.elasticsearch.annotations.Document;
 
+/**
+ * @author zeroCamel
+ */
 public class Article {
 
     @Id

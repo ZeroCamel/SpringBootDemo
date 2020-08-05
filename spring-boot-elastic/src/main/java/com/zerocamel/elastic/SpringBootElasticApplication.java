@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Spring Boot 默认使用两种技术操作ES
  * 1、SpringData ElasticSearch
- * 2、Jest
+ * 2、Jest deprecated
+ * 3、React
  */
 @SpringBootApplication
 public class SpringBootElasticApplication {
